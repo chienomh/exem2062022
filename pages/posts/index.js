@@ -38,9 +38,9 @@ export default function index({ posts, total }) {
     },
   ];
 
-  const [typeSort, setTypeSort] = useState(-1);
-  const [listPost, setListPost] = useState(posts)
-  const [params, setParams] = useState({ limit: 10, page: 0 });
+  const [typeSort, setTypeSort] = React.useState(-1);
+  const [listPost, setListPost] = React.useState(posts)
+  const [params, setParams] = React.useState({ limit: 10, page: 0 });
 
   const handleChangeTypeSort = (e) => {
     setTypeSort(e.target.value);

@@ -30,7 +30,7 @@ export default function DetailPost({ data }) {
       >
         Tạ Đức Chiến
       </Box>
-      <Container>
+      {data && <Container>
         <div
           style={{
             fontSize: "20px",
@@ -53,6 +53,7 @@ export default function DetailPost({ data }) {
                 width={500}
                 height={500}
                 style={{ objectFit: "contain", borderRadius: "20px" }}
+                alt="this is image"
               />
             </div>
             <div>
@@ -113,6 +114,7 @@ export default function DetailPost({ data }) {
                         width={200}
                         height={200}
                         style={{ objectFit: "contain" }}
+                        alt='this is image'
                       />
                     </div>
                   </div>
@@ -121,7 +123,8 @@ export default function DetailPost({ data }) {
             </div>
           </div>
         </div>
-      </Container>
+      </Container>}
+      
     </div>
   );
 }

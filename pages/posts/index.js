@@ -21,7 +21,7 @@ import React, { useEffect, useState } from "react";
 import apiClient from "../api/apiClient";
 
 
-export default function index({ posts, total }) {
+export default function Index({ posts, total }) {
 
   const listSort = [
     {
